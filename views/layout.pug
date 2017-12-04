@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js")
+  body   
+    
+    h2(class="pink z-depth-1 white-text" style="margin-top:0;padding: 10px")=title
+    
+    div(class="container")
+      div(class="card-panel")
+        div(class="row")
+          div(class="col m4 s12")
+            h4 Client IP Address
+            br
+            p=ip
+          div(class="col m4 s12")
+            h4 Client User Agent
+            br
+            p=software
+          div(class="col m4 s12")
+            h4 Client Language
+            br
+            p=lang
